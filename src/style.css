@@ -1,0 +1,122 @@
+:root{
+    --primaryColor: #ff274b;
+    --secondaryColor: #f7bcf7;
+    --lightColor : #ffffff;
+    --bgColor-1 : #171a1c;
+    --bgColor-2 : #22282a;
+}
+*{
+box-sizing: border-box;
+}
+.container{
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+body{
+font-family: 'Cairo', sans-serif;
+margin: 0;
+background-color: var(--bgColor-1);
+}
+h3{
+    color: var(--lightColor);
+}
+span{
+    color: var(--primaryColor);
+}
+.form-container{
+ 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-container form{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    background-color: var(--bgColor-2);
+    padding: 20px;
+    border: 1px solid var(--primaryColor);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px var(--secondaryColor);
+    width: 420px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: cursive;
+
+}
+.form-container form input{
+    height: 26px;
+        padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--secondaryColor);
+    font-size: 16px;
+}
+.form-container form input:focus{
+    outline: var(--primaryColor);
+    box-shadow: 0 0px 7px var(--secondaryColor);
+    border: 1px solid var(--primaryColor);
+
+}
+.btn{
+    
+    font-family: cursive;
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    padding: 8px 16px;
+    border: 1px var(--primaryColor) solid;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition:  0.6s;
+    text-decoration: none;
+    
+    
+    
+}
+.btn:hover{
+    background-color: transparent;
+    color: var(--primaryColor);
+    box-shadow: 0 4px 8px var(--secondaryColor);
+}
+/* nav ul {
+    display: flex;
+    
+} */
+nav ul li {
+    
+list-style-type: none;
+display:inline-block ;
+margin: 20px;
+
+}
+nav ul li a{
+    color: var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .6s ;
+}
+nav ul li a:hover{
+    color: var(--primaryColor);
+}
+.d-flex{
+    display: flex;
+    justify-content:space-between;
+    align-items :center;
+}
+.shadow{
+    box-shadow: 1px 1px 10px 1px #22282a;
+
+}
